@@ -18,7 +18,6 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
-
 }
 img{
     width: 25px;
@@ -53,15 +52,30 @@ button:hover{
     opacity: 0.8;
 }
 #main{
+    padding: auto;
+    margin: auto;
+    display: inline-block;
+    width: 95%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+}
+#img-container{
+    position: absolute;
+    top: 10vh;
+    left: 0px;
     display: inline-block;
     padding: auto;
     margin: auto;
     background-color: #edf0f1;
-    width: 95%;
-    height: 85vh;
-}
-footer{
-    height: 25vh;
     width: 100%;
-    background-color: #cf7f6a;
+    height: 70vh;
+}
+#users-details{
+    right: 10%;
+    position: absolute;
+    height: 90vh;
+    width: 20vw;
+    background-color: 	hsla(12, 51%, 61%, 0.50);
+    z-index: 10;
 }
