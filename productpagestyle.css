@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     background-color: #1c1c1a;
+    text-align: center;
 }
 
 li, a, button {
@@ -17,9 +18,10 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
+
 }
 img{
-    width: 50px;
+    width: 25px;
     height: 100%;
 }
 #header-img{
@@ -39,7 +41,7 @@ img{
     color: #cf7f6a;
 }
 button{
-    padding: 9px 25px;
+    padding: 10px 25px;
     background-color: #cf7f6a;
     opacity: 1;
     border: none;
@@ -49,4 +51,17 @@ button{
 button:hover{
     background-color: #cf7f6a;
     opacity: 0.8;
+}
+#main{
+    display: inline-block;
+    padding: auto;
+    margin: auto;
+    background-color: #edf0f1;
+    width: 95%;
+    height: 85vh;
+}
+footer{
+    height: 25vh;
+    width: 100%;
+    background-color: #cf7f6a;
 }
