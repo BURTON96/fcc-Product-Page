@@ -1,9 +1,10 @@
-*{
+body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     background-color: #1c1c1a;
     text-align: center;
+    font-family: 'Source Code Pro', monospace;
 }
 
 li, a, button {
@@ -62,36 +63,66 @@ button:hover{
 }
 #img-container{
     position: absolute;
-    top: 10.1vh; /* Prevents appeareance of a gap between submit button an contact details header */
+    top: 10vh;
     left: 0px;
     display: inline-block;
     padding: auto;
     margin: auto;
-    background-color: #edf0f1;
+    background-color: pink;
     width: 100%;
     height: 70vh;
 }
 #users-details{
+    
     right: 10%;
     position: absolute;
     height: 90vh;
     width: 20vw;
-    background-color: 	hsla(12, 51%, 61%, 0.50);
+    background-color: 	#edf0f1;
     z-index: 10;
 }
 #form{
-    margin-top: 100px;
-    background-color: hsla(12, 51%, 61%, 0);
+    z-index: 3;
+    height: 70vh;
+    font-family: 'Source Code Pro', monospace;
+    background-color: #edf0f1;
+    top: 10vh;
+    left: 0px;
 }
-.forminput{
+#contactdetails{
+    position: absolute;
+    padding-top: 2.5vh;
+    margin: auto;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 7.5vh;
+    font-size: 25px;
+    font-weight: 200;
     color: #edf0f1;
+    background-color: hsl(12, 51%, 65%);
+}
+
+.form-input{
+    margin-top: 10vh;
+    background-color: #edf0f1;
     border: none;
     font-size: 16px;
-    height: 30px;
+    height: 55px;
     width: 85%;
     background-color: hsla(0, 0%, 100%, 0);
 }
+
+input{
+    margin: 30px 30px;
+    height: 30px;
+    width: 85%;
+}
+
 #submit{
+    font-size: 25px;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 200;
     border: none;
     border-style: none;
     position: absolute;
