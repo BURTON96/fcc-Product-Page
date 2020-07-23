@@ -20,7 +20,7 @@ header{
     align-items: center;
     padding: 30px 10%;
 }
-img{
+#header-img{
     width: 25px;
     height: 100%;
 }
@@ -68,17 +68,16 @@ button:hover{
     display: inline-block;
     padding: auto;
     margin: auto;
-    background-color: pink;
     width: 100%;
-    height: 70vh;
+    height: 80vh;
 }
 #users-details{
     
     right: 10%;
     position: absolute;
-    height: 90vh;
+    height: 100vh;
     width: 25vw;
-    background-color: 	#edf0f1;
+    background-color:#edf0f1;
     z-index: 10;
 }
 #form{
@@ -139,4 +138,109 @@ input{
 }
 #submit:hover{
   background-color: hsl(12, 51%, 51%);
+}
+.slideshow-container{
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+.mySlides{
+    display: none;
+}
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: 35vh;
+    padding: 16px;
+    color: #edf0f1;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev{
+    left: 0;
+}
+.prev:hover, .next:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+.text{
+ color: #edf0f1;
+ font-size: 15px;
+ padding: 8px 12px;
+ position: absolute;
+ bottom: 8px;
+ width: 100%;
+ text-align: center;
+}
+
+.numbertext{
+    color: #edf0f1;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+}
+.dot{
+    cursor: pointer;
+    height: 5px;
+    width: 5px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 3s ease;
+    bottom: 0;
+}
+.active, .dot:hover{
+    background-color: #717171;
+}
+
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+@keyframes fade{
+    from {opacity: 4}
+    to {opacity: 1}
+}
+.img-1{
+    background-image: url("https://media.wired.com/photos/593271df5c4fbd732b552a96/master/w_946,c_limit/602857main_pia14293-amended-43_946-7101.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 80vh;
+    width: 100%;
+}
+.img-2{
+    background-image: url("https://images.pexels.com/photos/4355348/pexels-photo-4355348.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 80vh;
+    width: 100%;
+}
+.img-3{
+    background-image: url("https://images.pexels.com/photos/23769/pexels-photo.jpg?cs=srgb&dl=space-rocket-orbit-galaxy-23769.jpg&fm=jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 80vh;
+    width: 100%;
 }
