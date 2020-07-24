@@ -5,16 +5,20 @@ body{
     background-color: #1c1c1a;
     text-align: center;
     font-family: 'Source Code Pro', monospace;
+    height: 100%
 }
-
-li, a, button {
-    font-family: sans-serif;
+a{
+    text-decoration: none;
+}
+li, #nav-item, button {
+    font-family: 'Source Code Pro', monospace;
     font-weight: 500;
     font-size: 16px;
     color: #edf0f1;
     text-decoration: none;
 }
 header{
+    background-color: ;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,7 +41,7 @@ header{
 .nav_options, li, a {
     transition: all 0.3s ease;
 }
-.nav_options, li, a:hover {
+.nav_options, li, #nav-item:hover {
     color: #cf7f6a;
 }
 button{
@@ -231,11 +235,7 @@ h1, p{
     height: 80vh;
     width: 100%;
 }
-#img1-txt{
-    background-color: #edf0f1;
-    color: #edf0f1;
-    text-align: left;
-}
+
 .img-2{
     background-image: url("https://images.pexels.com/photos/4355348/pexels-photo-4355348.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     background-repeat: no-repeat;
@@ -253,4 +253,33 @@ h1, p{
     position: relative;
     height: 80vh;
     width: 100%;
+}
+.footer-container {
+}
+footer{
+    top: 120vh;
+    position: relative;
+    height: 250px;
+    width: 100%;
+    background-color: #cf7f6a;
+    display: flex;
+}
+.footer-box{
+    width: 30%;
+    color: #1c1c1a;
+    text-align: left;
+    margin-left: 15px;
+    font-size: 15px;
+}
+.socials{  
+    width: 15px;
+    height: 100%;
+    margin-top: -100px;
+}
+.facebook{
+    margin-left: 10px;
+}
+.faq-link{
+    color: #1c1c1a;
+    text-decoration: none;
 }
