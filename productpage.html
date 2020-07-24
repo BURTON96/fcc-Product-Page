@@ -14,32 +14,52 @@
         <img id="header-img" src="https://image.flaticon.com/icons/svg/770/770701.svg" alt="logo">
         <nav id="nav-bar">
             <ul class="nav-options">
-                <li class="nav-link"><a href="#" id="nav-item">About</a></li>
+                <li class="nav-link"><a href="#about" id="nav-item">About</a></li>
                 <li class="nav-link"><a href="#" id="nav-item">Features</a></li>
                 <li class="nav-link"><a href="#" id="nav-item">Tiers</a></li>
             </ul>
         </nav>
-        <a class="cta" href="#"><button>Contact</button></a>
+        <a class="cta" href="#contact"><button>Contact</button></a>
     </header>
     <div id="main">
         <div id="users-details">
             <form id="form" action="https://www.freecodecamp.com/email-submit">
                 <h1 id="bookinginfo">BOOKING INFORMATION</h1>
-                <div class="form-input">
-                <label>
-                    <input name="full-name" type="text" placeholder="FullName"required />
+
+                    <div class="form-input">
+                        <div class="test">
+                    <label><div id="input-title">FIRST NAME</div>
+                        <input id="f-name" name="f-name" type="text" placeholder="" required>
+                    </label>
+                    <label><div id="input-title">LAST NAME</div>
+                        <input id="l-name" name="l-name" type="text" placeholder="" required>
+                    </label>
+                    </div>
+                <label><div id="input-title">EMAIL</div>
+                    <input name="email" id="email" type="email" placeholder="" required >
                 </label>
-                <br><br>
-                <label>
-                    <input name="email" id="email" type="email" placeholder="Email" required >
+                <label><div id="input-title">TICKET TYPE</div>
+                <input class="ticket-type" list="dropdown" name="dropdown" type="">
+                <datalist id="dropdown">
+                    <option value="First Class">£999.99</option>
+                    <option value="Second Class">£555.55</option>
+                    <option value="Third Class">£222.22</option>
+                </datalist>
                 </label>
-            </div>
+                
+                <label><div id="input-title">ADDITIONAL INFORMATION</div>
+                    <textarea></textarea>
+                </label>
+
+
             <input id="submit" type="submit" >
+            </div>
+
             </form>
         </div>
 
         <!--Carousel/Slide Show Container -->
-        <div id="img-container">
+        <div id="about">
 <div class="slideshow-container">
             <!--Option 1-->
             <div class="mySlides fade">
@@ -104,7 +124,7 @@
                 <a href="#" target="_blank"> <img class="socials instagram" src="https://image.flaticon.com/icons/svg/1077/1077042.svg"></a>
                 <a href="#" target="_blank"><img class="socials youtube" src="https://image.flaticon.com/icons/svg/1384/1384028.svg"></a>
             </div>
-            <div class="footer-box contact-info">
+            <div id="contact" class="footer-box contact-info">
                 <h1>Contact US</h1>
                 <p>Email: contact@maf.co.uk</p>
                 <p>Call: 12345 678 012</p>
