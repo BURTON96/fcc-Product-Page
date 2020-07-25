@@ -108,14 +108,7 @@ button:hover{
 }
 
 .form-input{
-    text-align: left;
-    margin-top: 10vh;
-    background-color: #edf0f1;
-    border: none;
-    font-size: 16px;
-    height: 55px;
     width: 85%;
-    background-color: hsla(0, 0%, 100%, 0);
 }
 .test{
     display: flex;
@@ -128,6 +121,7 @@ button:hover{
     margin-left: 30px;
 }
 input{
+    font-size: 10px;
     font-family: 'Source Code Pro', monospace;
     height: 30px;
     width: 92%;
@@ -271,6 +265,15 @@ h1, p{
 }
 .img-3{
     background-image: url("https://images.pexels.com/photos/23769/pexels-photo.jpg?cs=srgb&dl=space-rocket-orbit-galaxy-23769.jpg&fm=jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 80vh;
+    width: 100%;
+}
+.img-4{
+    background-image: url("https://images.pexels.com/photos/256229/pexels-photo-256229.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
