@@ -18,7 +18,13 @@ li, #nav-item, button {
     color: #edf0f1;
     text-decoration: none;
 }
+
 header{
+    background-color: rgba(28, 28, 26, 0.5);
+    z-index: 100;
+    position: fixed;
+    height: 10px;
+    width: 1050px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,10 +63,11 @@ button:hover{
     opacity: 0.8;
 }
 #main{
+ 
     padding: auto;
     margin: auto;
     display: inline-block;
-    width: 95%;
+    width: 90%;
     height: 100%;
     position: relative;
     text-align: center;
@@ -323,6 +330,9 @@ footer{
     body {
       background-color:;
     }
+    header{
+        width: 40%;
+    }
     li, #nav-item, button {
         font-family: 'Source Code Pro', monospace;
         font-weight: 500;
@@ -378,7 +388,7 @@ footer{
     }
     .footer-container{
         position: static;
-        margin-top: 25px;
+        margin-top: 50px;
         width: 100vh;
         height: 100%;
     }
