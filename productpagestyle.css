@@ -5,7 +5,8 @@ body{
     background-color: #1c1c1a;
     text-align: center;
     font-family: 'Source Code Pro', monospace;
-    height: 100%
+    height: 100%;
+    width: 100%;
 }
 a{
     text-decoration: none;
@@ -18,7 +19,6 @@ li, #nav-item, button {
     text-decoration: none;
 }
 header{
-    background-color: ;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -81,10 +81,8 @@ button:hover{
     height: 100vh;
     width: 25vw;
     background-color:#edf0f1;
-    z-index: 10;
 }
 #form{
-    z-index: 3;
     height: 80%;
     width: 100%;
     font-family: 'Source Code Pro', monospace;
@@ -93,7 +91,7 @@ button:hover{
     left: 0px;
     margin-top: 130px;
 }
-#bookinginfo{
+.bookinginfo{
     position: absolute;
     padding-top: 2.5vh;
     margin: auto;
@@ -106,12 +104,8 @@ button:hover{
     color: #edf0f1;
     background-color: hsl(12, 51%, 65%);
 }
-
 .form-input{
     width: 85%;
-}
-.test{
-    display: flex;
 }
 #f-name, #l-name{
     width: 85%;
@@ -135,7 +129,6 @@ textarea{
     margin-bottom: 15px;
     margin-left: 30px;
 }
-
 
 #submit{
     font-size: 25px;
@@ -326,3 +319,47 @@ footer{
     text-decoration: none;
 }
 
+@media only screen and (max-width: 800px) {
+    body {
+      background-color: white;
+    }
+    #main{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    }
+    #about{
+        position: static;
+
+    }
+    #users-details{
+        position: static;
+        height: 80vh;
+        width: 100vw;
+        background-color:#edf0f1;
+    }
+    .bookinginfo{
+        position: static;
+    }
+    .footer-container{
+        position: static;
+        margin-top: 100px;
+        width: 100vh;
+        height: 100%;
+    }
+    footer{
+        position: static;
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+    }
+    .footer-box{
+        width: 100vh;
+        color: #1c1c1a;
+        text-align: left;
+        margin-left: 15px;
+        font-size: 15px;
+    } 
+}
